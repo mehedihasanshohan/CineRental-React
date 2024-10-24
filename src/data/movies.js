@@ -1,7 +1,7 @@
 const data =[
   {
     "id": crypto.randomUUID(),
-    "cover": "/assets/movie-covers/once-in-ho.jpg",
+    "cover": "/avatar.png",
     "title": "iron man",
     "description" : "adventure movie",
     "genre" : "comedy/Drama",
@@ -10,7 +10,16 @@ const data =[
   },
   {
     "id": crypto.randomUUID(),
-    "cover": "/once-in-ho.jpg",
+    "cover": "/iron-man.png",
+    "title": "Spider man",
+    "description" : "adventure movie",
+    "genre" : "comedy/Drama",
+    "rating": 5,
+    "price": 140
+  },
+  {
+    "id": crypto.randomUUID(),
+    "cover": "/marriage-strory.jpg",
     "title": "Spider man",
     "description" : "adventure movie",
     "genre" : "comedy/Drama",
@@ -28,7 +37,16 @@ const data =[
   },
   {
     "id": crypto.randomUUID(),
-    "cover": "/once-in-ho.jpg",
+    "cover": "/parasite.jpg",
+    "title": "Spider man",
+    "description" : "adventure movie",
+    "genre" : "comedy/Drama",
+    "rating": 5,
+    "price": 140
+  },
+  {
+    "id": crypto.randomUUID(),
+    "cover": "/pain-and-gain.jpg",
     "title": "Spider man",
     "description" : "adventure movie",
     "genre" : "comedy/Drama",
