@@ -1,16 +1,39 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
-
+import { useState } from "react"
 import Rating from "./Rating"
-
+import MovieDetails from "./MovieDetails";
 
 const MovieCard = ({movie}) => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedMovie, setSelectedMovie] = useState(null);
+
+  function handleMovieSelection(movie){
+    setSelectedMovie(movie);
+    setShowModal(true);
+   }
+
+   function handleModalClose(){
+    setSelectedMovie(null);
+    setShowModal(false);
+   }
+
+
+
   return (
     <>
+      {
+        showModal && (
+        <MovieDetails
+                 movie={selectedMovie}
+                 onClose={handleModalClose} />
+       )}
+
       <figure
               key={movie.id}
               className="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl"
             >
+              <a href="#" onClick={(event) => {event.preventDefault(); handleMovieSelection(movie); }}>
               <img
                 className="w-full object-cover"
                 // src={getImgUrl(movie.cover)}
@@ -36,7 +59,8 @@ const MovieCard = ({movie}) => {
                   <span>${movie.price} | Add to Cart</span>
                 </a>
               </figcaption>
-            </figure>
+              </a>
+      </figure>
     </>
   )
 }
