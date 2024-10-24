@@ -5,7 +5,7 @@ const data =[
     "title": "iron man",
     "description" : "adventure movie",
     "genre" : "comedy/Drama",
-    "rating": 5,
+    "rating": 3,
     "price": 140
   },
   {
@@ -23,7 +23,7 @@ const data =[
     "title": "Spider man",
     "description" : "adventure movie",
     "genre" : "comedy/Drama",
-    "rating": 5,
+    "rating": 4,
     "price": 140
   },
   {
@@ -32,7 +32,7 @@ const data =[
     "title": "Spider man",
     "description" : "adventure movie",
     "genre" : "comedy/Drama",
-    "rating": 5,
+    "rating": 2,
     "price": 140
   },
   {
@@ -41,7 +41,7 @@ const data =[
     "title": "Spider man",
     "description" : "adventure movie",
     "genre" : "comedy/Drama",
-    "rating": 5,
+    "rating": 4,
     "price": 140
   },
   {
@@ -50,7 +50,7 @@ const data =[
     "title": "Spider man",
     "description" : "adventure movie",
     "genre" : "comedy/Drama",
-    "rating": 5,
+    "rating": 3,
     "price": 140
   },
 ]
