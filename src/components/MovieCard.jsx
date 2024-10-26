@@ -17,7 +17,7 @@ const MovieCard = ({movie}) => {
       // console.log(movie);const
     const found = cartData.find((item) => {
       return item.id === movie.id;
-    })
+    });
 
     if(!found){
       setCartData([...cartData, movie]);
@@ -45,7 +45,8 @@ const MovieCard = ({movie}) => {
         showModal && (
         <MovieDetails
                  movie={selectedMovie}
-                 onClose={handleModalClose} />
+                 onClose={handleModalClose}
+                 onCartAdd={handleAddToCart} />
        )}
 
       <figure

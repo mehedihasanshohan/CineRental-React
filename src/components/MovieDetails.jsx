@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
 
-const MovieDetails = ({movie, onClose}) => {
+const MovieDetails = ({movie, onClose, onCartAdd}) => {
   return (
     <>
         <div
@@ -34,7 +34,7 @@ const MovieDetails = ({movie, onClose}) => {
             <div className="grid lg:grid-cols-2 gap-2">
               <a
                 className="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
-                href="#"
+                href="#" onClick={(e) => onCartAdd(e, movie)}
               >
                 <img src="./assets/tag.svg" alt="" />
                 <span>{movie.price} | Add to Cart</span>
