@@ -1,8 +1,24 @@
+import { useState, useContext } from "react"
+
+import { MovieContext } from "../context";
+import CartDetails from "./CartDetails";
+
 
 const Header = () => {
+	const [showCart, setShowCart] = useState(false);
+	const {cartData} = useContext(MovieContext);
+
+	function handleCartShow(){
+		setShowCart(true);
+	}
+
   return (
     <>
       <header>
+				{
+					showCart &&
+						<CartDetails onClose={() => setShowCart(false)}></CartDetails>
+				}
 		<nav className="container flex items-center justify-between space-x-10 py-6">
 			<a href="index.html">
 				<img src="./assets/logo.svg" width="139" height="26" alt="" />
@@ -20,7 +36,8 @@ const Header = () => {
 					</a>
 				</li>
 				<li>
-					<a className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
+					<a className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
+						onClick={handleCartShow} href="#">
 						<img src="./assets/shopping-cart.svg" width="24" height="24" alt="" />
 					</a>
 				</li>
