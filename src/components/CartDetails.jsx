@@ -31,7 +31,7 @@ const CartDetails = ({ onClose }) => {
                       className="bg-[#D42967] rounded-md p-2 md:px-4 inline-flex items-center space-x-2 text-white"
                       onClick={() => handleRemove(item.id)}
                     >
-                      <img className="w-5 h-5" src="./assets/delete.svg" alt="Delete icon" />
+                      <img className="w-5 h-5" src="/assets/delete.svg" alt="Delete icon" />
                       <span className="max-md:hidden">Remove</span>
                     </button>
                   </div>
@@ -43,7 +43,7 @@ const CartDetails = ({ onClose }) => {
           </div>
           <div className="flex items-center justify-end gap-2">
             <a className="rounded-md p-2 md:px-4 inline-flex items-center space-x-2 bg-primary text-[#171923] text-sm" href="#">
-              <img src="./assets/icons/checkout.svg" width="24" height="24" alt="Checkout icon" />
+              <img src='/assets/icons/checkout.svg' width="24" height="24" alt="Checkout icon" />
               <span>Checkout</span>
             </a>
             <button
