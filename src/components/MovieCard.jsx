@@ -28,7 +28,7 @@ const MovieCard = ({movie}) => {
   }
 
   function handleMovieSelection(movie){
-    setSelectedMovie(movie);
+      setSelectedMovie(movie);
     setShowModal(true);
    }
 
